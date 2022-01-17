@@ -3,6 +3,9 @@ import Topbar from './comps/Topbar';
 import { createTheme } from '@mui/material/styles'
 import { ThemeProvider } from '@mui/system';
 import Theme from './Theme';
+import SignUp from './comps/auth/SignUp';
+
+
 function App() {
 
   const theme = createTheme(Theme())
@@ -11,7 +14,7 @@ function App() {
     <ThemeProvider theme={theme} >
       <div className="App">
         <Topbar />
-        Honeycomb app
+        <SignUp />
       </div>
     </ThemeProvider>
   );
