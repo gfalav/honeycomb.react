@@ -8,7 +8,7 @@ const Home = () => {
         <Box>
             <Box component="img"
                  sx={{ width: '100%'}}
-                 src= { Homeimg}
+                 src= { Homeimg }
                  alt= 'Home Img' />
         </Box>
     )
