@@ -4,8 +4,10 @@ import { useFormik } from "formik"
 import * as Yup from 'yup'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import app from '../firebase/fb';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
+  let navigate = useNavigate()
 
   const validationSchema = Yup.object().shape({
     email: Yup.string('Enter a valid email').email('Enter a valid email'),
@@ -26,6 +28,7 @@ const SignUp = () => {
       createUserWithEmailAndPassword(auth, values.email, values.password)
         .then((userCredential) => {
           // Signed in 
+          navigate('/')
           // ...
         })
         .catch((error) => {

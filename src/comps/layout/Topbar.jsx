@@ -9,7 +9,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle'
 import MenuItem from '@mui/material/MenuItem'
 import Menu from '@mui/material/Menu'
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth'
-import app from './firebase/fb'
+import app from '../firebase/fb'
 import { Link, useNavigate } from 'react-router-dom'
 
 

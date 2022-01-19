@@ -1,5 +1,5 @@
 import { Box } from '@mui/material'
-import Homeimg from '../images/city.jpg'
+import Homeimg from '../../images/city.jpg'
 
 const Home = () => {
 

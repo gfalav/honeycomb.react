@@ -5,7 +5,8 @@ import App from './App';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignIn from './comps/auth/SignIn';
 import SignUp from './comps/auth/SignUp';
-import Home from './comps/Home';
+import Home from './comps/layout/Home';
+import ResetPwd from './comps/auth/ResetPwd';
 
 ReactDOM.render(
   <Router>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Route index element={<Home />} />
         <Route path="SignIn" element={ <SignIn /> } />
         <Route path="SignUp" element={ <SignUp /> } />
+        <Route path="Reset" element={ < ResetPwd /> } />
         <Route path="*" element={ <main style={{ padding: "1rem" }}> <p>There's nothing here!</p> </main> } />
       </Route>
     </Routes>

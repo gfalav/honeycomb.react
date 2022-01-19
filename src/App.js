@@ -1,5 +1,5 @@
 import './App.css';
-import Topbar from './comps/Topbar';
+import Topbar from './comps/layout/Topbar';
 import { createTheme } from '@mui/material/styles'
 import { ThemeProvider } from '@mui/system';
 import Theme from './Theme';
